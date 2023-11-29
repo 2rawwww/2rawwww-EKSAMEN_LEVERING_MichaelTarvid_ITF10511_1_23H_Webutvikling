@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <title>Company Page</title>
+    </head>
+    <body style="max-width: 1600px; margin: auto;">
+      <header>
+        <img src="../../EKSAMENRESSURSER/ressurser/logo1.png" alt="Company Logo" id="logo">
+        <nav>
+          <ul>
+            <li><a style="font-weight: bolder; text-decoration: underline; text-decoration-color: #e6bd43; text-underline-offset: 5px;" href="index.html">Home</a></li>
+            <li><a href="products.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html#contact-us" class="contact-button">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="videoframe">
+          <article class="content">
+          </article>
+          <h1>Compelling headline</h1>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <a href="#our-services-section" class="button">Read more about our services</a>
+          <div class="video-background">
+              <video autoplay loop muted>
+                  <source src="../../EKSAMENRESSURSER/ressurser/mountains.mp4" type="video/mp4">
+              </video>
+              <img src="../../EKSAMENRESSURSER/imgs/buildings-205986_1920.jpg" alt="Img replace" class="mobile-video-image">
+          </div>
+        </section>
+        <section class="subhead">
+          <h2>Engaging subheading. What can you help your visitors with</h2>
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+        </section>
+        <section class="about-section">
+          <article class="image-container">
+            <img src="https://placehold.co/400" alt="Description of image" style="width:400px;height:400px;"> 
+          </article>
+          <article class="text-container">
+            <h2>About Our Company</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+            <a href="about.html" class="read-more-button">Read more about us</a> 
+          </article>
+        </section>
+        <section id="our-services-section" class="our-services">
+          <h2>Our Services</h2>
+          <section class="services-container">
+            <article class="service">
+              <i style="font-size: 3rem;" class="fas fa-users fa-lg"></i>
+              <h3>Branding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article class="service">
+              <i style="font-size: 3rem;" class="fas fa-cloud-upload-alt fa-lg"></i>
+              <h3>Branding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article class="service">
+              <i style="font-size: 3rem;" class="fas fa-code fa-lg"></i>
+              <h3>Branding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article class="service">
+              <i style="font-size: 3rem;" class="fas fa-wifi fa-lg"></i>
+              <h3>Branding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+          </section>
+        </section>
+        <section class="newsletter-signup">
+          <h2>Sign up for our newsletter!</h2>
+          <article class="newsletter-container">
+              <input type="email" name="email" placeholder="Eleanorrigby@gmail.com" required>
+              <button type="submit">Sign me up!</button>
+            </article>
+        </section>
+        </main>
+        <a href="#top" id="back-to-top" title="Back to Top">
+          <span class="arrow-up">&#9650;</span> 
+        </a>  
+        <footer>
+          <section class="footer-content">
+              <img src="../../EKSAMENRESSURSER/ressurser/logo1.png" alt="Company Logo" id="footer-logo">
+              <p>Companyrights Companyname 2023</p>
+              <div class="footer-links">
+                  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+        </section>
+      </footer>
+      <!--CHATGPT-->
+      <script>
+      window.onscroll = function() {
+        scrollFunction();
+      };
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("back-to-top").style.display = "block";
+          document.body.classList.add('user-is-scrolling');
+        } else {
+          document.getElementById("back-to-top").style.display = "none";
+          document.body.classList.remove('user-is-scrolling');
+        }
+      }
+      
+      
+      document.getElementById('back-to-top').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        window.scrollTo({top: 0, behavior: 'smooth'}); 
+      });
+      </script>
+      <!--CHATGPT-->
+    </body>
+  </html>

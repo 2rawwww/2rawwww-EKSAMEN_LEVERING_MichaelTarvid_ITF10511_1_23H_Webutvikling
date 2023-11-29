@@ -1,0 +1,760 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Noto Sans;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Noto Sans;
+  }
+  
+  #logo {
+    height: 8rem;
+    margin: 1rem;
+  } 
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .contact-button {
+    padding: 10px 20px;
+    background-color:#e6bd43;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bolder;
+  }
+  
+  .contact-button:hover {
+    background-color: #000;
+    color: #e6bd43;
+  }
+  
+  .videoframe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+    height: 30rem;
+    padding: 2rem 0rem 0rem 0rem; 
+    overflow: hidden; 
+  }
+  
+  .video-background {
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+  }
+  
+  
+  .videoframe h1, .videoframe p, .button {
+    position: relative; 
+    z-index: 1; 
+    color: #000;
+    font-family: Noto Sans;
+  }
+
+  .videoframe h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .videoframe p {
+    margin-bottom: 40px;
+    max-width: 40%;
+  }
+  
+  .mobile-video-image {
+    display: none;
+    width: 100%; 
+    height: auto; 
+}
+
+  .button {
+    text-decoration: none;
+    background-color: #e6bd43;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 0px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #000;
+    color: #e6bd43;
+  } 
+  
+  .subhead {
+    height: 20rem;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 40px 300px; 
+    text-align: center; 
+    font-family: Noto Sans; 
+  }
+  
+  .subhead h2 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+  }
+  
+  .subhead p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+  }
+  
+  .about-section {
+    display: flex;
+    background-color: #e6bd43; 
+    padding: 50px; 
+    gap: 20px; 
+    align-items: center; 
+  }
+  
+  .image-container {
+    flex-basis: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; 
+    border: 2px solid #e6bd43; 
+  }
+  
+  .text-container {
+    margin: 20px;
+  }
+
+  .text-container h2, .text-container p, .read-more-button {
+    font-family: Noto Sans;
+  }
+
+  .text-container h2 {
+    margin: 0 0 10px 0; 
+    color: #000; 
+    font-size: 2rem;
+  }
+  
+  .read-more-button {
+    display: inline-block;
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    border: 2px solid #000; 
+    background-color: transparent; 
+    color: #000; 
+    text-decoration: none; 
+    font-weight: bold; 
+  }
+  
+  .read-more-button:hover {
+    background-color: #000; 
+    color: #e6bd43; 
+  }
+  
+  .our-services {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 50px 20px; 
+    text-align: center; 
+    font-family: Noto Sans;
+  }
+  
+  .our-services h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .services-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding-top: 2rem;
+  }
+  
+  .service {
+    width: 25%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+  
+  .service h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+  }
+  
+  .service p {
+    font-size: 1rem; 
+    line-height: 1.5; 
+  }
+  
+  .newsletter-signup {
+    background: rgb(231, 229, 229); 
+    text-align: center;
+    padding: 50px 0 100px 0;
+  }
+  
+  .newsletter-signup .newsletter-container {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .newsletter-signup h2 {
+    color: #000; 
+    margin-bottom: 20px;
+    font-family: Noto Sans;
+    font-size: 2.5rem;
+  }
+  
+  .newsletter-signup form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .newsletter-signup input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    margin-right: 10px; 
+    font-family: Noto Sans;
+    max-width: 200px;
+  }
+  
+  .newsletter-signup button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e6bd43; 
+    color: #000;
+    cursor: pointer;
+    font-family: Noto Sans;
+    font-weight: bold;
+  }
+  
+  .newsletter-signup button:hover {
+    background-color: #cda434; 
+  }
+
+    /* INDEX HTML END */
+    /* PORTFOLIO START */ 
+
+    .portfolio-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url('../../EKSAMENRESSURSER/imgs/buildings-205986_1920.jpg'); 
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      opacity: 0.9;
+      padding: 100px 0; 
+    } 
+
+    .portfolio-header h1 {
+      font-size: 4rem;
+    }
+ 
+    .previous-jobs, .branding-section {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+  
+    .previous-jobs h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .yellow-line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e6bd43;
+      height: 4px;
+    }
+
+    .previous-jobs-buttons {
+      display: flex;
+      justify-content: start;
+      margin: 40px 0 40px 0;
+      gap: 20px;
+    }
+
+    .previous-jobs-buttons a {
+      background-color: #fff;
+      font-weight: 500;
+      padding: 7px 10px 7px 10px;
+      border: 2px solid #000;
+      border-radius: 1px;
+    }
+
+
+    .branding-section section {
+      margin-top: 2rem;
+    }
+    
+    .branding-section h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    
+    .image-placeholder-container {
+      display: flex;  
+      flex-wrap: wrap;
+      align-items: flex-start; 
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .image-placeholder-container article {
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+     flex: 1;
+     flex-basis: calc(33% - 20px);
+     max-width: 692px;  
+     gap: 10px;
+    }
+
+    footer {
+      background-color: #252525; 
+      color: #fff; 
+      display: flex;
+      padding: 2rem;
+  }
+  
+  #footer-logo {
+      height: 7rem; 
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem; 
+      width: 1600px; 
+      font-family: Noto Sans;
+  }
+  
+  .footer-links a {
+      color: #fff; 
+      text-decoration: none;
+      margin: 0 10px;
+  }
+  
+  .footer-links i {
+      font-size: 1.5rem; 
+  }
+  
+  #back-to-top {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    z-index: 999; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #252525; 
+    color: white; 
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 50px; 
+    cursor: pointer; 
+    display: none; 
+}
+
+#back-to-top .arrow-up {
+    display: inline-block;
+    margin-bottom: 5px; 
+    font-size: 25px; 
+}
+
+
+    /* MEDIA PORTFOLIO END */
+    /* ABOUT START */
+
+  
+.overlay-section {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay-background-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0.8;
+
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px;
+  text-align: left;
+  width: 90%;
+  height: 70%;  
+  max-width: 600px;
+}
+
+.overlay-title {
+  color: #000;
+  margin-bottom: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.overlay-description {
+  color: #000;
+  margin-bottom: 30px;
+  font-family: 'Noto Sans', sans-serif;
+}
+   
+#clients {
+  background-color: #e6bd43; 
+  padding: 5rem;
+  text-align: center;
+}
+
+.clients-container h2 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+.clients-logos img {
+  margin: 0 30px; 
+  height: 9rem; 
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 20px;
+  font-family: Noto Sans;
+}
+
+.contact-section-header { 
+  font-size: 3rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-form, .contact-info {
+  flex-basis: 48%; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form h2, .contact-info h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #e6bd43;
+  border: none;
+  width: 10rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  min-width: 25px; 
+}
+
+  @media (max-width: 768px) { 
+    header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      padding: 20px; 
+    }
+  
+    #logo {
+      margin-bottom: 5px; 
+    }
+  
+    nav {
+      height: 13rem;
+    }
+
+    nav ul {
+      flex-direction: column;
+      padding: 0; 
+      width: 100%; 
+      height: 12rem;
+      gap: 20px; 
+    }
+
+    nav li {
+      width: 100%;
+      text-align: center; 
+    }
+  
+   .contact-button {
+      width: 100%;
+      margin-top: 40px; 
+    }
+
+
+    .videoframe {
+      font-size: 1rem;
+      padding: 10px 0px 0px 0px; 
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .videoframe h1 {
+      font-size: 2rem;
+    }
+
+    .videoframe p {
+      padding: 3px;
+      margin: 0px;
+      max-width: 80%;
+    }
+
+    .video-background video {
+      display: none; 
+    }
+  
+    .mobile-video-image {
+      display: block; 
+      height: 40rem;
+        
+    }
+
+    .text-container {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .about-section {
+      flex-direction: column; 
+    }
+  
+    .image-container {
+      width: 100%; 
+      height: auto; 
+    }
+
+    .subhead {
+      padding: 20px; 
+      margin-top: 0.5rem;
+      margin-bottom: 6rem;
+    }
+
+    .our-services {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .services-container {
+      margin-top: 2rem;
+      flex-direction: column;
+      align-items: center; 
+      padding: 0;
+    }
+    
+    .service {
+      width: 100%; 
+      margin-bottom: 2rem; 
+      text-align: center; 
+      padding: 1rem; 
+    }
+  
+    .service i, .service img {
+      margin-bottom: 1rem; 
+    }
+  
+    .service h3 {
+      margin-top: 0.5rem; 
+    }
+  
+    .service p {
+      margin-top: 0.5rem; 
+      padding: 0 1rem; 
+    }
+        
+      /* MEDIA INDEX HTML END */
+      /* MEDIA PORTFOLIO START */
+
+      .footer-content, body {
+        width: 100%; 
+        max-width: 100%; 
+      }
+    
+      .previous-jobs, .branding-section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
+      .image-placeholder-container article {
+        flex-basis: 100%;
+      }
+
+      .image-placeholder-container {  
+        flex-direction: column;
+      }
+
+      img {
+        max-width: 100%; 
+        height: auto; 
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center; 
+        max-width: 100%;
+      }
+
+      .footer-content {
+          flex-direction: column;
+          gap: 1rem;
+      }
+
+      body::after { 
+        content: '';
+        display: none; 
+      }
+
+      body.user-is-scrolling #back-to-top {
+        display: block; 
+      }
+  
+      /* MEDIA PORTFOLIO END */
+      /* MEDIA ABOUT START */
+
+      .clients-logos img {
+        margin: 1rem; 
+        height: 9rem; 
+      }
+
+      .overlay-section {
+        position: relative;
+        display: block;
+        padding: 0px; 
+      }
+    
+      .overlay-background-image {
+        width: 100%; 
+        height: 100%; 
+      }
+    
+      .overlay-content {
+        position: relative; 
+        top: auto;
+        left: auto;
+        transform: none;
+        background: rgba(255, 255, 255, 0.95); 
+        padding: 20px; 
+        margin-top: -115%; 
+        margin-left: 0; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        text-align: left; 
+      }
+    
+      .overlay-title {
+        font-size: 1.4rem; 
+      }
+    
+      .overlay-description {
+        font-size: 0.9rem;
+      }
+      
+      .overlay-content .button {
+        margin-top: 10px;
+      }
+
+      .overlay-description {
+        margin-bottom: 10px;
+      }
+
+      .button {
+        font-size: 0.9rem; 
+        padding: 12px 24px;
+        margin-top: 20px; 
+        display: inline-block; 
+        background-color: #e6bd43; 
+        color: #000;
+        text-align: center; 
+        text-decoration: none; 
+      }
+
+      .contact-container {
+        flex-direction: column;
+      }
+    
+      .contact-info {
+        margin-top: 60px; 
+      }
+
+      .contact-form, .contact-info {
+        flex-basis: 100%;
+        width: 100%;
+      }
+
+      iframe{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
